@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/> 
+    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create Music App</title>
+  </head>
+  <body>
+    <section class="app">
+      <header>
+        <h1>Create Music App</h1>
+        <p>Create sounds with just <span class="redOne">one</span> tap</p>
+      </header>
+      <button class="start-button" onclick="showInterface()">Start</button>
+      <div class="visual"></div>
+      <div class="pads" id="pads">
+        <div class="pad1 shadow">
+          <audio src="./sounds/bubbles.mp3" class="sound"></audio>
+        </div>
+        <div class="pad2 shadow">
+          <audio class="sound">
+            <source src="./sounds/clay.mp3" />
+          </audio>
+        </div>
+        <div class="pad3 shadow">
+          <audio class="sound">
+            <source src="./sounds/confetti.mp3" />
+          </audio>
+        </div>
+        <div class="pad4 shadow">
+          <audio class="sound">
+            <source src="./sounds/glimmer.mp3" />
+          </audio>
+        </div>
+        <div class="pad5 shadow">
+          <audio class="sound">
+            <source src="./sounds/moon.mp3" />
+          </audio>
+        </div>
+        <div class="pad6 shadow">
+          <audio class="sound">
+            <source src="./sounds/ufo.mp3" />
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
